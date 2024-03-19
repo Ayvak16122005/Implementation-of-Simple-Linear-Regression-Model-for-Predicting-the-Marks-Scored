@@ -67,8 +67,20 @@ print("RMSE= ",rmse)
 ```
 
 ## Output:
-![simple linear regression model for predicting the marks scored](sam.png)
-
+Dataset:
+![Screenshot 2024-03-19 223350](https://github.com/Ayvak16122005/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/147690197/ebd25573-8fb1-4c78-8931-84ef5a02e4b3)
+Head values:
+![Screenshot 2024-03-19 223444](https://github.com/Ayvak16122005/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/147690197/8baba54e-69d6-463b-8d28-f947e48d1152)
+Tail values:
+![Screenshot 2024-03-19 223611](https://github.com/Ayvak16122005/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/147690197/f6076982-55bd-47fe-99a4-4a0a3f001736)
+X and Y values:
+![Screenshot 2024-03-19 223948](https://github.com/Ayvak16122005/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/147690197/8a33584f-4a62-4cdd-b8c3-7a2b5cf54910)
+Predication values of X and Y:
+![Screenshot 2024-03-19 224052](https://github.com/Ayvak16122005/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/147690197/b9d951c3-6f2d-4c41-a932-5de1edafe7b6)
+Training Set:
+![Screenshot 2024-03-19 224142](https://github.com/Ayvak16122005/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/147690197/028eb3ce-1dc8-40a1-978b-87601ebac8ca)
+Testing Set:
+![Screenshot 2024-03-19 224238](https://github.com/Ayvak16122005/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/147690197/bfac78be-3b4e-4418-8f34-b8aa5a8b29e5)
 
 ## Result:
 Thus the program to implement the simple linear regression model for predicting the marks scored is written and verified using python programming.
