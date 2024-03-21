@@ -28,20 +28,25 @@ RegisterNumber:2305003004
 */
 ```
 ```python
+#Dataset:
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.metrics import mean_absolute_error,mean_squared_error
-df=pd.read_csv('student_scores.csv')
+df=pd.read_csv('/content/ML student_scores.csv')
 print(df)
+#Head values:
 df.head(0)
-df.tail(0)
 print(df.head())
+#Tail values:
+df.tail(0)
 print(df.tail())
+#X and Y values:
 x = df.iloc[:,:-1].values
 print(x)
 y = df.iloc[:,1].values
 print(y)
+#Predication values of X and Y:
 from sklearn.model_selection import train_test_split
 x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=1/3,random_state=0)
 from sklearn.linear_model import LinearRegression
@@ -64,6 +69,7 @@ plt.title("Hours vs Scores(Testing set)")
 plt.xlabel("Hours")
 plt.ylabel("Scores")
 plt.show()
+ #MSE,RMSE:
 mse=mean_absolute_error(y_test,y_pred)
 print('MSE = ',mse)
 mae=mean_absolute_error(y_test,y_pred)
@@ -76,31 +82,41 @@ print("RMSE= ",rmse)
 ```
 Dataset:
 ```
-![Screenshot 2024-03-19 223350](https://github.com/Ayvak16122005/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/147690197/ebd25573-8fb1-4c78-8931-84ef5a02e4b3)
+![Screenshot 2024-03-21 214817](https://github.com/Ayvak16122005/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/147690197/5bec79f3-3d15-496c-adfa-bd4c2a07f2d7)
+
 ```
 Head values:
 ```
-![Screenshot 2024-03-19 223444](https://github.com/Ayvak16122005/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/147690197/8baba54e-69d6-463b-8d28-f947e48d1152)
+![Screenshot 2024-03-21 215106](https://github.com/Ayvak16122005/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/147690197/3ac75b54-2758-40c8-b019-09c128d09e98)
+
 ```
 Tail values:
 ```
-![Screenshot 2024-03-19 223611](https://github.com/Ayvak16122005/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/147690197/f6076982-55bd-47fe-99a4-4a0a3f001736)
+![Screenshot 2024-03-21 215142](https://github.com/Ayvak16122005/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/147690197/9a117896-0a66-4b52-bb55-c21e19f73e81)
+
 ```
 X and Y values:
 ```
-![Screenshot 2024-03-19 223948](https://github.com/Ayvak16122005/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/147690197/8a33584f-4a62-4cdd-b8c3-7a2b5cf54910)
+![Screenshot 2024-03-21 215259](https://github.com/Ayvak16122005/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/147690197/c7788a9f-15a9-409e-8608-f91cecc677f2)
 ```
 Predication values of X and Y:
 ```
-![Screenshot 2024-03-19 224052](https://github.com/Ayvak16122005/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/147690197/b9d951c3-6f2d-4c41-a932-5de1edafe7b6)
+![Screenshot 2024-03-21 215425](https://github.com/Ayvak16122005/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/147690197/ba0f080e-ae0f-4aa0-b01d-afde530bf1fb)
+
 ```
 Training Set:
 ```
-![Screenshot 2024-03-19 224142](https://github.com/Ayvak16122005/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/147690197/028eb3ce-1dc8-40a1-978b-87601ebac8ca)
+![Screenshot 2024-03-21 215529](https://github.com/Ayvak16122005/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/147690197/be049678-ef84-4309-b1bd-9ccd89068143)
+
 ```
 Testing Set:
 ```
-![Screenshot 2024-03-19 224238](https://github.com/Ayvak16122005/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/147690197/bfac78be-3b4e-4418-8f34-b8aa5a8b29e5)
+![Screenshot 2024-03-21 215604](https://github.com/Ayvak16122005/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/147690197/593c2e79-3d1c-49a8-aee3-15f915cf74b7)
+```
+ MSE,RMSE:
+```
+![Screenshot 2024-03-21 215856](https://github.com/Ayvak16122005/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/147690197/0795ae84-072b-45ee-b92f-83f0827cfbeb)
+
 
 ## Result:
 Thus the program to implement the simple linear regression model for predicting the marks scored is written and verified using python programming.
